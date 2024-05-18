@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            border-bottom: 1px solid gray;
+            margin-bottom: 10px;
+        }
+        body{
+            border: 5px solid rgb(234, 234, 234);
+            border-bottom-width: 10px;
+            padding-right: 20px;
+            width: 700px;
+        }
+
+        div{
+            font-size: 13px;
+            /* font-family: Arial, Helvetica, sans-serif; */
+        }
+
+        input{
+            flex: 1;
+        }
+
+        .label{
+            flex: 2;
+        }
+
+        .container{
+            display: flex;
+        }
+        
+        .data{
+            flex: 8;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        Basic Info
+    </nav>
+
+    <div class="container">
+        <div class ="label">Employ ID</div>
+        <div class="data">9</div>
+    </div>
+
+    <div class="container">
+        <div class="label">Last name</div>
+        <div class="data">Dodsworth</div>
+    </div>
+
+    <div class="container">
+        <div class="label">First Name</div>
+        <input class="data" type="text">
+    </div>
+
+    <div class="container">
+        <div class="label">Gender</div>
+        <div class="data">
+            <div>
+                <input name="Gender" type="radio" value="1">
+                <label for="1">Male</label>
+            </div>
+
+            <div>
+                <input type="radio" name="Gender" value="2">
+                <label for="2">Female</label>
+            </div>
+
+            <div>
+                <input type="radio" name="Gender" value="3">
+                <label for="3">XXX</label>
+            </div>  
+
+            <div>
+                <input type="radio" value="4" name="Gender">
+                <label for="4">ZZZ</label> 
+            </div>      
+        </div>
+    </div>
+</body>
+</html>

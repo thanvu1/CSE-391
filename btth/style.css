@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaeaea;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-section {
+    padding: 20px;
+}
+
+.form-section h2 {
+    color: #333;
+    margin-top: 0;
+    border-bottom: 2px solid #000000; /* Added border for separation */
+}
+
+.form-group { /* New class for label and input grouping */
+    display: flexbox;
+    align-items: center; /* Align items vertically */
+    margin: 10px 0;
+}
+
+.form-group label, div {
+    flex: 2; 
+    margin-right: 10px; /* Spacing between label and input */
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    flex: 8; 
+    padding: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+button[type="reset"] {
+    background-color: #f44336;
+}

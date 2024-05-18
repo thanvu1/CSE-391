@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="employee-form">
+        <div class="form-section">
+            <h2>Basic Info</h2>
+            <div class="form-group">
+                <div class="label">Employ ID</div>
+                <div class="data">9</div>
+            </div>
+            <div class="form-group">
+                <div class="label">Last name</div>
+                <div class="data">Dodsworth</div>
+            </div>
+            <div class="form-group">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first_name">
+            </div>
+            <div class="form-group">
+                <div class="label">Gender</div>
+                <div class="data">
+                <div>
+                    <input name="Gender" type="radio" value="Male">
+                    <label for="male">Male</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="Gender" value="Female">
+                    <label for="female">Female</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="Gender" value="XXX">
+                    <label for="xxx">XXX</label>
+                </div>  
+                <div>
+                    <input type="radio" value="4" name="ZZZ">
+                    <label for="zzz">ZZZ</label> 
+                </div>      
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="title">Title:</label>
+                <input type="text" name="title" id="title">
+            </div>
+            <div class="form-group">
+                <label for="suffix">Suffix:</label>
+                <input type="text" id="suffix" name="suffix">
+            </div>
+            <div class="form-group">
+                <label for="birthdate">BirthDate:</label>
+                <input type="datetime" id="birthdate" name="birthdate">
+            </div>
+            <div class="form-group">
+                <label for="hiredate">HireDate:</label>
+                <input type="datetime" id="hiredate" name="hiredate">
+            </div>
+            <div class="form-group">
+                <label for="ssn">SSN (if applicable):</label>
+                <input type="text" id="ssn" name="ssn">
+            </div>
+            <div class="form-group">
+                <label for="reportsto">Reports To:</label>
+                <select id="reportsto" name="reportsto">
+                    <option value="Buchanan">Buchanan</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="form-section">
+            <h2>Contact Info</h2>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address">
+            </div>
+            <div class="form-group">
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city">
+            </div>
+            <div class="form-group">
+                <label for="region">Region:</label>
+                <input type="text" id="region" name="region">
+            </div>
+            <div class="form-group">
+                <label for="postal-code">Postal Code:</label>
+                <input type="text" id="postal-code" name="postal_code">
+            </div>
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <select id="country" name="country">
+                    <option value="Buchanan">Russian Federation</option>
+                </select>)
+            </div>
+            <div class="form-group">
+                <label for="home-phone">US Home Phone:</label>
+                <input type="text" id="home-phone" name="home_phone">
+            </div>
+        </div>
+        
+        <div class="form-section">
+            <h2>Optional Info</h2>
+            <div class="form-group">
+                <label for="notes">Notes</label>
+                <textarea id="notes" name="notes" placeholder="Notes"></textarea>
+            </div>
+            <div class="form-group">
+                <div class="label">Preferred Shift</div>
+                <div class="data">
+                    <div>
+                        <input type="checkbox" name="shift" value="regular">
+                        <label for="regular">Regular</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="shift" value="gravy">
+                        <label for="gravy">Grary Yard</label>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="form-group">
+                <label for="active">Active?</label>
+                <input type="checkbox" name="active">
+            </div>
+            <div class="form-group">
+                <div class="label">Are you human?</div> <input type="text" placeholder="Enter CAPTCHA">
+            </div>
+        </div>
+        <div class="footer">
+            <button type="submit">Submit</button>
+            <button type="reset">Cancel</button>
+        </div>
+        
+    </form>
+</body>
+</html>
